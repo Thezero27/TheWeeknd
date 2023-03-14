@@ -1,0 +1,98 @@
+/*Reset CSS*/
+*{
+    margin: 0; padding: 0; 
+    box-sizing: border-box;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+/*Estilos Generales*/
+#datos_musica,#volumen,#controles{
+    display: flex;
+    
+}
+#low,#high,#prev,#play,#next{
+    width: 5vh; height: 5vh; display: flex;
+    /*45px*/
+    justify-content: center; align-items: center;
+    border-radius: 50%; cursor: pointer;
+    color: rgb(91, 61, 100); background-color: #ffffffcc;
+}
+#low:active,#high:active,#prev:active,
+#play:active,#next:active{
+    background-color: rgb(210, 210, 210);
+}
+body{
+    background-color: rgb(235, 235, 235);
+    background-image: url(../img/fondo.png);
+    background-size: 100% 100%;
+    font-size: 2vh;
+    display: block;
+}
+
+/*=====REPRODUCTOR DE MÚSICA=====*/
+.container{
+    height: 500px; width: 85%; margin: 60px auto; border-radius: 10%;
+    background: linear-gradient(to top, rgb(190, 185, 140), rgb(231, 30, 80));
+    border: 8px solid rgb(55, 55, 55); color: #fff; user-select: none;
+}
+
+/*Datos de la Canción*/
+#datos_musica{
+    height: 30px; flex-flow: column;
+    align-items: center; margin-top: 20px;
+}
+#nombre{
+    font-size: 17px; margin-bottom: 8px;
+}
+#artista{
+    color: #e0e0e0;
+}
+
+/*Álbum*/
+#album{
+    width: 220px; height: 220px; margin: 35px auto;
+    border-radius: 50%; border: 5px solid rgb(55, 55, 55);
+    overflow: hidden;
+}
+#img_alb{
+     width: 215px; height: 215px;
+}
+
+/*Volúmen de Música*/
+#volumen{
+    justify-content: center;
+    height: 50px; margin-top: -15px; 
+    margin-bottom: 20px;
+}
+#volumen a{
+    margin: 4px 15px;
+}
+#low,#high{
+    width: 35px; height: 35px;
+}
+
+/*Controles del Reproductor*/
+#controles{
+    align-items: center; justify-content: space-evenly;
+}
+#play{
+    padding-left: 6px; 
+    width: 8vh; height: 8vh;
+    /*65px*/
+}
+.autor{
+    font-size: 2vh;
+    width: 5vh;
+    display: inline;
+    margin: 20px;
+}
+.autor-title{
+    color: #f70707cc;
+}
+.autor-name{
+    color: #161616;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.autor-name-link{
+    text-decoration: none;
+}
